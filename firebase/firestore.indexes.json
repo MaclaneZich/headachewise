@@ -1,0 +1,44 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "Headaches",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ongoing",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "startTime",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Headaches",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "ongoing",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "startTime",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "fcm_tokens",
+      "fieldPath": "fcm_token",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    }
+  ]
+}

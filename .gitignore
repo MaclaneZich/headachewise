@@ -1,0 +1,99 @@
+# HeadacheWise ignore rules.
+#
+# Secrets and machine-specific configuration come first. The app will not
+# build until you add your own copies of the Firebase files listed below.
+# See the "Building" section of README.md.
+
+# ---- Secrets and private configuration ----------------------------------
+# Firebase platform config (holds API keys and OAuth client IDs)
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+ios/GoogleService-Info.plist
+macos/Runner/GoogleService-Info.plist
+# Firebase web options for this app, and any FlutterFire-generated options
+lib/backend/firebase/firebase_config.dart
+lib/firebase_options.dart
+# Environment files
+.env
+.env.*
+*.env
+# Android release signing
+android/key.properties
+*.jks
+*.keystore
+# Apple certificates, keys, and provisioning profiles
+*.p12
+*.p8
+*.pem
+*.cer
+*.mobileprovision
+# Google service accounts and Firebase CLI state
+*service-account*.json
+*serviceAccount*.json
+*-firebase-adminsdk-*.json
+.firebase/
+
+# ---- Flutter and Dart ----------------------------------------------------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+/coverage/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+app.*.symbols
+app.*.map.json
+migrate_working_dir/
+
+# ---- Android -------------------------------------------------------------
+android/.gradle/
+android/local.properties
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/gradle/wrapper/gradle-wrapper.jar
+android/app/debug/
+android/app/profile/
+android/app/release/
+**/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+
+# ---- iOS -----------------------------------------------------------------
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/flutter_assets/
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/ServiceDefinitions.json
+**/xcuserdata/
+*.xcuserstate
+
+# ---- Cloud Functions -----------------------------------------------------
+firebase/**/node_modules/
+firebase/**/.env
+
+# ---- Editors and tools ---------------------------------------------------
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+.claude/
+.history/
+*.swp
+
+# ---- Operating system ----------------------------------------------------
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# ---- Local scratch files -------------------------------------------------
+lib/flutter_flow/custom_functions_snapshot.txt
